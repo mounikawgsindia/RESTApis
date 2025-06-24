@@ -7,5 +7,7 @@ services:
     envVars:
       - key: JAVA_VERSION
         value: 17
+      - key: MONGODB_URI
+        value: mongodb://your-hostname:27017/mydb
     healthCheckPath: /actuator/health
-    autoDeploy: true 
+    autoDeploy: true
