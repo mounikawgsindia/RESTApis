@@ -9,4 +9,3 @@ services:
         value: 17
     healthCheckPath: /actuator/health
     autoDeploy: true 
-      plan: free
