@@ -11,4 +11,3 @@ services:
         value: mongodb+srv://mounika:rA8gzF55GFsd8xL7@cluster0.ld51mqe.mongodb.net/chatdb?retryWrites=true&w=majority
     healthCheckPath: /actuator/health
     autoDeploy: true
-
