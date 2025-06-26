@@ -1,12 +1,15 @@
 services:
   - type: web
     name: dank-springboot-app
+    env: java
+    plan: free
     buildCommand: ./gradlew build
     startCommand: java -jar build/libs/dank-0.0.1-SNAPSHOT.jar
     envVars:
       - key: JAVA_VERSION
         value: 17
-      - key: MONGODB_URI
-        value: mongodb://your-hostname:27017/mydb
+      - key: SPRING_DATA_MONGODB_URI
+        value: mongodb+srv://mounika:rA8gzF55GFsd8xL7@cluster0.ld51mqe.mongodb.net/chatdb?retryWrites=true&w=majority
     healthCheckPath: /actuator/health
     autoDeploy: true
+
